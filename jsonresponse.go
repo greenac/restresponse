@@ -8,7 +8,7 @@ import (
 
 type Response struct {
 	Code    int                    `json:"code"`
-	Payload map[string]interface{} `json:"payload"`
+	Payload *map[string]interface{} `json:"payload"`
 }
 
 func (r *Response) Respond(w http.ResponseWriter) {
